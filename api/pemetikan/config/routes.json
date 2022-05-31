@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pemetikans",
+      "handler": "pemetikan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pemetikans/count",
+      "handler": "pemetikan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pemetikans/:id",
+      "handler": "pemetikan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pemetikans",
+      "handler": "pemetikan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pemetikans/:id",
+      "handler": "pemetikan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pemetikans/:id",
+      "handler": "pemetikan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

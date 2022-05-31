@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/retailers",
+      "handler": "retailer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/retailers/count",
+      "handler": "retailer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/retailers/:id",
+      "handler": "retailer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/retailers",
+      "handler": "retailer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/retailers/:id",
+      "handler": "retailer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/retailers/:id",
+      "handler": "retailer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

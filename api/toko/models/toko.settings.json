@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tokos",
+  "info": {
+    "name": "Toko",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "idToko": {
+      "type": "integer",
+      "required": true
+    },
+    "alamatToko": {
+      "type": "richtext",
+      "required": true
+    },
+    "retailer": {
+      "model": "retailer",
+      "via": "toko"
+    },
+    "namaToko": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

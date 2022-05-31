@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pemetikans",
+  "info": {
+    "name": "Pemetikan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tanggalKirim": {
+      "type": "datetime"
+    },
+    "namaPetani": {
+      "type": "string",
+      "required": true
+    },
+    "berat": {
+      "type": "decimal",
+      "required": true
+    },
+    "lokasiPemetikan": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

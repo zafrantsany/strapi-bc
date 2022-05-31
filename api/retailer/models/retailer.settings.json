@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "retailers",
+  "info": {
+    "name": "retailer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "jumlahditerima": {
+      "type": "integer",
+      "required": true
+    },
+    "waktuditerima": {
+      "type": "date",
+      "required": true
+    },
+    "toko": {
+      "via": "retailer",
+      "model": "toko"
+    }
+  }
+}
